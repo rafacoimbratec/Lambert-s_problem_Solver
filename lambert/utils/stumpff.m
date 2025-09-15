@@ -6,9 +6,8 @@ function [C,S] = stumpff(z)
 
     if abs(z) < epsZ
         % Series about z=0
-        z2 = z*z;
-        C = 1/2 - z/24 + z2/720 - z2*z/40320;
-        S = 1/6 - z/120 + z2/5040 - z2*z/362880;
+        C = 1/2;
+        S = 1/6;
         return;
     end
 
